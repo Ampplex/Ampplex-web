@@ -1,7 +1,7 @@
 {
   "projects": {
     "default": "ampplex-75da7",
-    "build": "ampplex-75da7",
+    "build": "ampplex-website",
     "Ampplex": "ampplex-75da7"
   },
   "targets": {}
