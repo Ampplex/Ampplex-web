@@ -3,6 +3,7 @@ import React from "react";
 export default function About() {
   return (
     <div>
+      <h2>Why to download ampplex?</h2>
       <h2
         style={{
           textAlign: "center",
@@ -10,7 +11,10 @@ export default function About() {
           marginBottom: "50px",
         }}
       >
-        About
+        Ampplex is an online social media app for educational content. We
+        created this app specially for students, because there is no social
+        media platform available which is specially designed for students. So to
+        solve this problem we created this app.
       </h2>
     </div>
   );

@@ -39,15 +39,15 @@ export default function Home() {
           draggable="false"
         />
 
-        <h1 className="theme">We are made to create somthing new</h1>
+        <h1 className="theme">We are made to create something new</h1>
 
         <div>
           <h2 className="app">Download Ampplex app</h2>
           <div
             className="Download-btn"
             style={{
-              width: "50%",
-              height: "40%",
+              width: 200,
+              height: 40,
               backgroundColor: "#fafafa",
               borderRadius: 100,
               margin: "auto",
@@ -354,9 +354,11 @@ export default function Home() {
           style={{
             color: "white",
             textAlign: "center",
+            marginTop: 25,
           }}
         >
-          Copyright © 2021 Ampplex contact us : team.amplex@gmail.com
+          Copyright © 2022 All rights reserved. Ampplex contact us :
+          team.amplex@gmail.com
         </p>
       </div>
     </>
