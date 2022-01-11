@@ -9,7 +9,7 @@ const Header = (props) => {
         className="header"
         style={{
           display: "flex",
-          justifyContent: "center",
+          justifyContent: "space-evenly",
           alignItems: "center",
         }}
       >

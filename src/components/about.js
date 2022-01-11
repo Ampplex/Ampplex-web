@@ -3,12 +3,19 @@ import React from "react";
 export default function About() {
   return (
     <div>
-      <h2>Why to download ampplex?</h2>
+      <h2
+        style={{
+          color: "white",
+        }}
+      >
+        Why to download ampplex?
+      </h2>
       <h2
         style={{
           textAlign: "center",
           marginTop: "50px",
           marginBottom: "50px",
+          color: "white",
         }}
       >
         Ampplex is an online social media app for educational content. We
