@@ -9,7 +9,16 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(to right, #ffc0cb, #9b0bdc, #81ebea);
+  background: linear-gradient(to right, #ffc0cb, #d885ff, #81ebea);
+  min-height: 100vh;
+}
+
+.container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, #ffc0cb, #d885ff, white);
   min-height: 100vh;
 }
 
@@ -23,6 +32,32 @@
   z-index: 2;
   min-height: 80vh;
   border-radius: 2rem;
+}
+
+.GlassMorphism2 {
+  background: linear-gradient(
+    to left bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  backdrop-filter: blur(1.3rem);
+  z-index: 2;
+  min-height: 80vh;
+  min-width: 90%;
+  border-radius: 2rem;
+}
+
+.glass2 {
+  background: linear-gradient(to right, #9b0bdc, #81ebea);
+  box-shadow: 0 0.5rem 1rem rgba(122, 122, 122, 0.5);
+  backdrop-filter: blur(2rem);
+  z-index: 2;
+  width: 200px;
+  height: 50px;
+  border-radius: 2rem;
+  position: absolute;
+  bottom: 40%;
+  margin-left: 67%;
 }
 
 .circle1 {

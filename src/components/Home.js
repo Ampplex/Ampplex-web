@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.css";
 import Lottie from "react-lottie";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -45,6 +46,24 @@ export default function Home() {
               }}
             />
           </div>
+          <Link to="/download_page">
+            <div className="glass2">
+              <p
+                style={{
+                  display: "flex",
+                  color: "white",
+                  fontSize: "22px",
+                  fontWeight: "bold",
+                  justifyContent: "center",
+                  textAlign: "center",
+                  marginTop: "10px",
+                  fontFamily: "monospace",
+                }}
+              >
+                Get started
+              </p>
+            </div>
+          </Link>
         </div>
         <div className="circle1">
           <img

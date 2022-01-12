@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./components/Home.js";
 import About from "./components/about";
 import "./App.css";
+import Download from "./components/Download";
 // Import the functions you need from the SDKs you need
 // import { initializeApp } from "firebase/app";
 // import { getAnalytics } from "firebase/analytics";
@@ -38,6 +39,9 @@ const App = () => {
           </Route>
           <Route exact path="/about">
             <About />
+          </Route>
+          <Route exact path="/download_page">
+            <Download />
           </Route>
         </Switch>
       </Router>
