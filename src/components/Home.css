@@ -1,9 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .container {
   display: flex;
   flex-direction: column;
@@ -34,19 +28,6 @@
   border-radius: 2rem;
 }
 
-.GlassMorphism2 {
-  background: linear-gradient(
-    to left bottom,
-    rgba(255, 255, 255, 0.7),
-    rgba(255, 255, 255, 0.3)
-  );
-  backdrop-filter: blur(1.3rem);
-  z-index: 2;
-  min-height: 80vh;
-  min-width: 90%;
-  border-radius: 2rem;
-}
-
 .glass2 {
   background: linear-gradient(to right, #9b0bdc, #81ebea);
   box-shadow: 0 0.5rem 1rem rgba(122, 122, 122, 0.5);
@@ -62,7 +43,7 @@
 
 .circle1 {
   position: absolute;
-  top: 2%;
+  top: -3%;
   right: 20%;
 }
 
@@ -70,12 +51,4 @@
   position: absolute;
   bottom: 2%;
   left: 10%;
-}
-
-.circle2 {
-  position: absolute;
-  top: 90%;
-  background: linear-gradient(to left bottom, blue, purple);
-  border-radius: 120px;
-  padding: 90px;
 }

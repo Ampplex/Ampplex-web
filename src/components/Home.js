@@ -74,7 +74,7 @@ export default function Home() {
             alt="ball"
           />
         </div>
-        <div className="circle2" />
+
         <div className="circle3">
           <img
             src={require("../static/Images/ball.png")}

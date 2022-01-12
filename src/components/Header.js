@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./components.css";
 
 const Header = (props) => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <>
       <div
@@ -14,11 +16,16 @@ const Header = (props) => {
         }}
       >
         <div className="header-logo">
+          <div className="menu-icon" onClick={() => setIsOpen(!isOpen)}>
+            <div className="bar1" />
+            <div className="bar2" />
+            <div className="bar3" />
+          </div>
           <Link
             to="/"
             style={{
               textDecoration: "none",
-              color: "black",
+              color: "white",
             }}
           >
             <img
@@ -27,44 +34,58 @@ const Header = (props) => {
               width={80}
               height={80}
               alt="Ampplex Logo"
-              onMouseEnter={() => {
-                console.log("hover");
-              }}
               style={{
                 position: "absolute",
                 top: 0,
-                left: 20,
+                left: "100px",
               }}
             />
             <div className="Title">
-              <h1 className="Title-text">Ampplex</h1>
+              <h1
+                className="Title-text"
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: "70px",
+                }}
+              >
+                Ampplex
+              </h1>
             </div>
           </Link>
-          <div className="Home">
-            <Link
-              to="/"
-              style={{
-                textDecoration: "none",
-                color: "black",
-              }}
-            >
-              <h2 className="home">Home</h2>
-            </Link>
-          </div>
-
-          <div className="About">
-            <Link
-              to="/about"
-              style={{
-                textDecoration: "none",
-                color: "black",
-              }}
-            >
-              <h2 className="about">About</h2>
-            </Link>
-          </div>
         </div>
-        <div className="breakPoint" />
+        {isOpen ? (
+          <>
+            <Link to="/">
+              <div className="home">
+                <h2
+                  style={{
+                    fontSize: "22px",
+                    fontWeight: "bold",
+                    color: "black",
+                    marginTop: "10px",
+                  }}
+                >
+                  Home
+                </h2>
+              </div>
+            </Link>
+            <Link to="/about">
+              <div className="about">
+                <h2
+                  style={{
+                    fontSize: "22px",
+                    fontWeight: "bold",
+                    color: "black",
+                    marginTop: "10px",
+                  }}
+                >
+                  About
+                </h2>
+              </div>
+            </Link>
+          </>
+        ) : null}
       </div>
     </>
   );
